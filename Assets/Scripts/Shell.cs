@@ -15,7 +15,7 @@ public class Shell : MonoBehaviour {
         transform.rotation.ToAxisAngle(out axis,out angle);
         Debug.Log(angle);
         Debug.Log(axis);
-        moveVector = new Vector2(Mathf.Cos(angle) * Mathf.Sign(axis.z), Mathf.Sin(angle))*Mathf.Sign(axis.z)*-1f;
+        moveVector = new Vector2(Mathf.Cos(angle) * Mathf.Sign(axis.z), Mathf.Sin(angle))*Mathf.Sign(axis.z);
         
 	}
     private void FixedUpdate()
