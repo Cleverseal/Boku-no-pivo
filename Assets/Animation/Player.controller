@@ -163,7 +163,7 @@ AnimatorState:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_Name: DekuBiing
-  m_Speed: 1
+  m_Speed: 0.8
   m_CycleOffset: 0
   m_Transitions:
   - {fileID: 1101160505303526604}
@@ -176,7 +176,7 @@ AnimatorState:
   m_SpeedParameterActive: 0
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: 4ebe7d205e81ba04e813fec8ba29d087, type: 2}
+  m_Motion: {fileID: 7400000, guid: 0e3fec82997bd3a42aaaf89440cc207b, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
@@ -200,7 +200,7 @@ AnimatorState:
   m_SpeedParameterActive: 0
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: f442cf55a25033648a611e214ad1563c, type: 2}
+  m_Motion: {fileID: 7400000, guid: 68d159d96f666f6408c6e0b29a776010, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
@@ -218,7 +218,7 @@ AnimatorStateMachine:
     m_Position: {x: 240, y: 240, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 1102608260412978556}
-    m_Position: {x: 588, y: 240, z: 0}
+    m_Position: {x: 516, y: 264, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 1102514017667399232}
     m_Position: {x: 408, y: -24, z: 0}
