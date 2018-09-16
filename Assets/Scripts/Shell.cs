@@ -13,14 +13,12 @@ public class Shell : MonoBehaviour {
         rb = GetComponent<Rigidbody2D>();
 
         transform.rotation.ToAxisAngle(out axis,out angle);
-        Debug.Log(angle);
-        Debug.Log(axis);
         moveVector = new Vector2(Mathf.Cos(angle) * Mathf.Sign(axis.z), Mathf.Sin(angle))*Mathf.Sign(axis.z);
         
 	}
     private void FixedUpdate()
     {
-        rb.MovePosition(transform.position + moveVector * speed * Time.deltaTime);
+        rb.MovePosition(transform.position + moveVector * speed * Time.deltaTime + new KekHandler(kek => { return kek*2; })(axis) );
     }
-
+    delegate Vector3 KekHandler(Vector3 kekVector);
 }
