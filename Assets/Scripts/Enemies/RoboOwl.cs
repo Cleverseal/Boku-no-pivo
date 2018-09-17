@@ -7,9 +7,9 @@ namespace BokuNoPivo
     public class RoboOwl : WatcherEnemy
     {
 
-        public float reloadDuration = 1;
-        public GameObject LaserPrefab;
-        public Transform LaserSpot;
+        [SerializeField] protected float reloadDuration = 1;
+        [SerializeField] protected GameObject LaserPrefab;
+        [SerializeField] protected Transform LaserSpot;
 
         private ParticleSystem ps;
         private bool reloading = false;

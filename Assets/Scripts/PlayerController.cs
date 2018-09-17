@@ -8,15 +8,15 @@ namespace BokuNoPivo
 
 
         public float speed = 20f;
-        public float forse = 200f;
+        [SerializeField]  private float forse = 200f;
 
-        public int jumpFrames = 5;
+        [SerializeField] private int jumpFrames = 5;
         private int currentJumpFrames = 0;
 
-        public Transform CornerCheckTransform;
-        public Transform GroundCheckLeft;
-        public Transform GroundCheckRight;
-        public LayerMask WhatIsGround;
+        [SerializeField] private Transform CornerCheckTransform;
+        [SerializeField] private Transform GroundCheckLeft;
+        [SerializeField] private Transform GroundCheckRight;
+        [SerializeField] private LayerMask WhatIsGround;
         private float groundRadius = 0.2f;
 
         private Rigidbody2D rb;

@@ -5,9 +5,9 @@ using UnityEngine;
 public class EndlessBackGround : MonoBehaviour
 {
 
-    public GameObject Player;
-    public GameObject Left;
-    public GameObject Right;
+    [SerializeField] private GameObject Player;
+    [SerializeField] private GameObject Left;
+    [SerializeField] private GameObject Right;
     private GameObject left, middle, right, buf1, buf2;
     float length;
     void Start()

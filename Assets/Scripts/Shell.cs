@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Shell : MonoBehaviour {
     // Use this for initialization
-    public float speed;
+    [SerializeField] private float speed;
     float angle;
     Vector3 axis;
     Vector3 moveVector;

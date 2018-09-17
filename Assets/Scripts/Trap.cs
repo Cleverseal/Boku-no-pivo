@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class Trap : MonoBehaviour {
 
-    public float x = 0;
-    public float y = 0;
+    [SerializeField] private float x = 0;
+    [SerializeField] private float y = 0;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {

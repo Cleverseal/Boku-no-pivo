@@ -3,8 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class ChasePlayer : MonoBehaviour {
-    public GameObject player;
-    public float Kx = 1, Ky = 1;
+    [SerializeField] private GameObject player;
+    [SerializeField] private float Kx = 1, Ky = 1;
     float dY, dX, newy, newx,
         prevPlayerX, prevPlayerY,
         playerX, playerY, zero; 

@@ -10,7 +10,7 @@ namespace BokuNoPivo
         protected float deltaX;
         protected float deltaY;
 
-        public float borderOfReaching = 1f;
+        [SerializeField] protected float borderOfReaching = 1f;
         protected float nearCoof = 2f;
         protected float almostReachedCoof = 4f;
 
@@ -21,9 +21,9 @@ namespace BokuNoPivo
         protected bool playerAllmostReached;
         protected bool fliped;
 
-        public GameObject Player;
+        protected GameObject Player;
 
-        public GameObject AtachedRange;
+        [SerializeField] protected GameObject AtachedRange;
         protected PlayerOnTrigger atachChecker;
 
         protected SpriteRenderer spriteR;
