@@ -15,7 +15,7 @@ namespace BokuNoPivo
         protected float almostReachedCoof = 4f;
 
 
-        protected bool atachedOnPlayer;
+        protected bool atachedOnPlayer = false;
         protected bool playerReached;
         protected bool playerNear;
         protected bool playerAllmostReached;
@@ -29,13 +29,7 @@ namespace BokuNoPivo
         protected SpriteRenderer spriteR;
         // Use this for initialization
 
-        protected bool Atached
-        {
-            get
-            {
-                return checkAtach();
-            }
-        }
+        
 
         public abstract void atackPlayer();
         protected void EnemyStart()
@@ -49,7 +43,6 @@ namespace BokuNoPivo
 
         protected bool checkAtach()
         {
-            Vector3 LaserStartPosition = transform.position;
             return atachedOnPlayer = atachChecker.OnEnter;
         }
 
