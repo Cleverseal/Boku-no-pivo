@@ -71,7 +71,7 @@ namespace BokuNoPivo
 
         protected void AnalyzePlayerSpeed()
         {
-            playerSpeed = Player.GetComponent<PlayerController>().speed;
+            playerSpeed = PlayerInfo.PlayerController.Speed;
             fasterThenPlayer = (speedX > playerSpeed * slowingCoof) ? true : false;
         }
 

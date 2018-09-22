@@ -13,7 +13,7 @@ namespace BokuNoPivo {
         float length;
         void Start()
         {
-            player = GameManager.Player;
+            player = PlayerInfo.Player;
             middle = gameObject;
             left = Left;
             right = Right;

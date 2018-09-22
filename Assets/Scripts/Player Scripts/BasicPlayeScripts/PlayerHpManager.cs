@@ -1,27 +1,29 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
-public class PlayerHpManager : MonoBehaviour {
-    [SerializeField] private int maxHealth;
-    [SerializeField] private int currentHealth;
-
-    public delegate void PlayerHpManagerHandler();
-    public event PlayerHpManagerHandler PlayerHasDied;
-
-    public void GetDamage(uint damage)
+namespace BokuNoPivo
+{
+    public class PlayerHpManager : MonoBehaviour
     {
-        currentHealth -= (int)damage;
-        if (currentHealth <= 0) PlayerHasDied();
-    }
+        [SerializeField] private int maxHealth;
+        [SerializeField] private int currentHealth;
 
-    public void GetHeal(int heal)
-    {
-        currentHealth = (currentHealth + heal <= maxHealth) ? currentHealth + heal : maxHealth;
-    }
+        public event PlayerEventHandler PlayerDied;
 
-    public void RestoreHealth()
-    {
-        currentHealth = maxHealth;
+        public void GetDamage(uint damage)
+        {
+            currentHealth -= (int)damage;
+            if (currentHealth <= 0) PlayerDied();
+        }
+
+        public void GetHeal(int heal)
+        {
+            currentHealth = (currentHealth + heal <= maxHealth) ? currentHealth + heal : maxHealth;
+        }
+
+        public void RestoreHealth()
+        {
+            currentHealth = maxHealth;
+        }
     }
 }

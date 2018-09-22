@@ -13,7 +13,7 @@ namespace BokuNoPivo
         // Use this for initialization
         void Start()
         {
-            player = GameManager.Player;
+            player = PlayerInfo.Player;
             prevPlayerX = player.transform.position.x;
             prevPlayerY = player.transform.position.y;
             zero = newx = transform.position.x;
